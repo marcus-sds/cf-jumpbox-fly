@@ -1,0 +1,4 @@
+if [ ! -f ./fly ]; then
+wget -O fly "http://concourse.$SYSTEM_DOMAIN/api/v1/cli?arch=amd64&platform=linux"
+chmod 700 fly
+fi
